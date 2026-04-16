@@ -6,7 +6,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?> @Nullable [] getRootConfigClasses() {
-        return new Class[]{WebConfig.class};
+        return new Class[]{WebConfig.class, I18NConfiguration.class};
     }
 
     @Override
